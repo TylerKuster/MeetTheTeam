@@ -27,37 +27,16 @@
     [super viewDidLoad];
 
     self.profileViewController = (ProfileViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"TeammateTableViewCell" bundle:nil]
          forCellReuseIdentifier:@"Cell"];
     
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"team" ofType:@"json"];
     NSData* data = [NSData dataWithContentsOfFile:filePath];
     self.theTeam = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-    
-    [super viewDidLoad];
 }
 
-#pragma mark - Segues
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"showProfile"])
-    {
-        NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
-        NSDictionary* selectedTeammate = self.theTeam[indexPath.row];
-        
-        ProfileViewController* controller = (ProfileViewController*)[[segue destinationViewController] topViewController];
-        
-        controller.teammate = selectedTeammate;
-        
-        controller.navigationItem.title = self.theTeam[indexPath.row][@"firstName"];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
-    }
-}
-
-
-#pragma mark - Table View
+#pragma mark - TableView Delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -74,7 +53,6 @@
     NSString* firstName = self.theTeam[indexPath.row][@"firstName"];
     NSString* lastName = self.theTeam[indexPath.row][@"lastName"];
     
-    
     [cell.teammateImageView setImageWithURL:avatarURL placeholderImage:nil];
 
     cell.teammateNameLabel.attributedText = [CMBTheme styleCellNameLabelWith:[NSString stringWithFormat:@"%@ %@", firstName, lastName]];
@@ -87,6 +65,28 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"showProfile" sender:self];
+}
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showProfile"])
+    {
+        NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+        NSDictionary* selectedTeammate = self.theTeam[indexPath.row];
+        
+        ProfileViewController* controller = (ProfileViewController*)[[segue destinationViewController] topViewController];
+        
+        controller.teammate = selectedTeammate;
+        
+        controller.navigationItem.title = self.theTeam[indexPath.row][@"firstName"];
+        
+        // Either I'm insane or there is a very subtle gradient on the Navigation bar... Add this if there is time
+        
+        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+        controller.navigationItem.leftItemsSupplementBackButton = YES;
+    }
 }
 
 @end

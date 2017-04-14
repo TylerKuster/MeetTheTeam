@@ -24,13 +24,6 @@
     UIImageView* chevronRight = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chevronRight"]];
     
     self.accessoryView = chevronRight;
-    
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

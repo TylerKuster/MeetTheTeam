@@ -25,7 +25,6 @@
 		79E06BE71EA1095B002AA47D /* CMBTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E06BE61EA1095B002AA47D /* CMBTheme.m */; };
 		79E06BE91EA10D93002AA47D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E06BE81EA10D93002AA47D /* Assets.xcassets */; };
 		79E06BEB1EA11041002AA47D /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = 79E06BEA1EA11041002AA47D /* team.json */; };
-		79E06BEE1EA12376002AA47D /* TeammateScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E06BED1EA12376002AA47D /* TeammateScrollView.m */; };
 		79E06BF11EA12CDB002AA47D /* TeammateProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E06BF01EA12CDB002AA47D /* TeammateProfileView.m */; };
 		D00B8F04090891878E827DB4 /* libPods-MeetTheTeamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CB997356AFDC82DD7CC465 /* libPods-MeetTheTeamTests.a */; };
 /* End PBXBuildFile section */
@@ -78,8 +77,6 @@
 		79E06BE61EA1095B002AA47D /* CMBTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBTheme.m; sourceTree = "<group>"; };
 		79E06BE81EA10D93002AA47D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E06BEA1EA11041002AA47D /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
-		79E06BEC1EA12376002AA47D /* TeammateScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeammateScrollView.h; sourceTree = "<group>"; };
-		79E06BED1EA12376002AA47D /* TeammateScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeammateScrollView.m; sourceTree = "<group>"; };
 		79E06BEF1EA12CDB002AA47D /* TeammateProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeammateProfileView.h; sourceTree = "<group>"; };
 		79E06BF01EA12CDB002AA47D /* TeammateProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeammateProfileView.m; sourceTree = "<group>"; };
 		A0866A1956FF1674E8B27309 /* Pods-MeetTheTeamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetTheTeamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetTheTeamUITests/Pods-MeetTheTeamUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,17 +142,15 @@
 			children = (
 				469AE8681EA05C9B00E4B35F /* AppDelegate.h */,
 				469AE8691EA05C9B00E4B35F /* AppDelegate.m */,
-				469AE86B1EA05C9B00E4B35F /* MasterViewController.h */,
-				469AE86C1EA05C9B00E4B35F /* MasterViewController.m */,
 				79E06BE51EA1095B002AA47D /* CMBTheme.h */,
 				79E06BE61EA1095B002AA47D /* CMBTheme.m */,
-				79E06BEF1EA12CDB002AA47D /* TeammateProfileView.h */,
-				79E06BF01EA12CDB002AA47D /* TeammateProfileView.m */,
+				469AE86B1EA05C9B00E4B35F /* MasterViewController.h */,
+				469AE86C1EA05C9B00E4B35F /* MasterViewController.m */,
 				469AE8A91EA08A5E00E4B35F /* TableViewCell */,
 				469AE86E1EA05C9B00E4B35F /* ProfileViewController.h */,
 				469AE86F1EA05C9B00E4B35F /* ProfileViewController.m */,
-				79E06BEC1EA12376002AA47D /* TeammateScrollView.h */,
-				79E06BED1EA12376002AA47D /* TeammateScrollView.m */,
+				79E06BEF1EA12CDB002AA47D /* TeammateProfileView.h */,
+				79E06BF01EA12CDB002AA47D /* TeammateProfileView.m */,
 				469AE8711EA05C9B00E4B35F /* Main.storyboard */,
 				469AE8761EA05C9B00E4B35F /* LaunchScreen.storyboard */,
 				79E06BE81EA10D93002AA47D /* Assets.xcassets */,
@@ -522,7 +517,6 @@
 				469AE86A1EA05C9B00E4B35F /* AppDelegate.m in Sources */,
 				469AE86D1EA05C9B00E4B35F /* MasterViewController.m in Sources */,
 				469AE8671EA05C9B00E4B35F /* main.m in Sources */,
-				79E06BEE1EA12376002AA47D /* TeammateScrollView.m in Sources */,
 				469AE8701EA05C9B00E4B35F /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

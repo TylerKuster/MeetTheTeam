@@ -15,6 +15,8 @@
 @interface ProfileViewController ()
 
 @property (nonatomic, retain) IBOutlet UIImageView* teammateImageView;
+@property (nonatomic, retain) IBOutlet UIScrollView* scrollView;
+
 @property (nonatomic, retain) IBOutlet TeammateProfileView* profileView;
 
 @end
@@ -25,8 +27,6 @@
 {
     if (self.teammate)
     {
-        NSLog(@"%@", [self.teammate description]);
-        
         NSString* firstName = self.teammate[@"firstName"];
         NSString* lastName = self.teammate[@"lastName"];
         
@@ -37,6 +37,10 @@
         self.profileView.positionLabel.attributedText = [CMBTheme styleProfilePositionLabelWith:self.teammate[@"title"]];
         
         self.profileView.bioTextView.attributedText = [CMBTheme styleProfileBioTextViewWith:self.teammate[@"bio"]];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, self.profileView.bioTextView.frame.size.height + 402.0f);
+        });
     }
 }
 

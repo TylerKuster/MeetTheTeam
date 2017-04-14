@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,7 +50,7 @@
                         <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
+                    <view key="view" contentMode="scaleAspectFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -68,11 +68,11 @@
                                     <constraint firstAttribute="width" constant="375" id="I9D-xZ-27M"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-c3-dFt" customClass="TeammateScrollView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-c3-dFt">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmJ-I8-ABL" customClass="TeammateProfileView">
-                                        <rect key="frame" x="0.0" y="234" width="375" height="305"/>
+                                        <rect key="frame" x="0.0" y="234" width="375" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbw-vw-bsa">
                                                 <rect key="frame" x="20" y="79" width="335" height="21"/>
@@ -101,7 +101,7 @@
                                             <constraint firstItem="HXr-v0-eeR" firstAttribute="top" secondItem="QmJ-I8-ABL" secondAttribute="top" constant="153" id="NUe-Oo-FrE"/>
                                             <constraint firstAttribute="trailing" secondItem="HXr-v0-eeR" secondAttribute="trailing" constant="16" id="hjK-xz-FAo"/>
                                             <constraint firstItem="HXr-v0-eeR" firstAttribute="leading" secondItem="QmJ-I8-ABL" secondAttribute="leading" constant="16" id="m6c-Jj-sSF"/>
-                                            <constraint firstAttribute="height" constant="305" id="y8V-ep-71z"/>
+                                            <constraint firstAttribute="height" constant="1000" id="y8V-ep-71z"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="bioTextView" destination="HXr-v0-eeR" id="tz9-eo-eb9"/>
@@ -140,14 +140,17 @@
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Teammate" id="mOI-FS-AaM"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="profileView" destination="QmJ-I8-ABL" id="2tD-Kf-lHG"/>
+                        <outlet property="scrollView" destination="9kz-c3-dFt" id="ZPr-Ba-Bt9"/>
                         <outlet property="teammateImageView" destination="ZzA-pR-oxl" id="gDD-nQ-KgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="127.28635682158921"/>
+            <point key="canvasLocation" x="708" y="126"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -249,6 +252,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>
