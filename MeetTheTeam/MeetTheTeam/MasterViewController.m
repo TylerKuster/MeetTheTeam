@@ -9,10 +9,13 @@
 #import "MasterViewController.h"
 #import "TeammateTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
-#import "DetailViewController.h"
+#import "ProfileViewController.h"
+#import "CMBTheme.h"
+
 
 @interface MasterViewController ()
 
+@property (strong, nonatomic) ProfileViewController *profileViewController;
 @property (nonatomic, retain) NSArray* theTeam;
 
 @end
@@ -23,7 +26,7 @@
 {
     [super viewDidLoad];
 
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.profileViewController = (ProfileViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     [self.tableView registerNib:[UINib nibWithNibName:@"TeammateTableViewCell" bundle:nil]
          forCellReuseIdentifier:@"Cell"];
     
@@ -38,14 +41,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"])
+    if ([[segue identifier] isEqualToString:@"showProfile"])
     {
         NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
         NSDictionary* selectedTeammate = self.theTeam[indexPath.row];
         
-        DetailViewController* controller = (DetailViewController*)[[segue destinationViewController] topViewController];
+        ProfileViewController* controller = (ProfileViewController*)[[segue destinationViewController] topViewController];
         
-        [controller setTeammate:selectedTeammate];
+        controller.teammate = selectedTeammate;
         
         controller.navigationItem.title = self.theTeam[indexPath.row][@"firstName"];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -74,17 +77,16 @@
     
     [cell.teammateImageView setImageWithURL:avatarURL placeholderImage:nil];
 
-    cell.teammateNameLabel.text = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
+    cell.teammateNameLabel.attributedText = [CMBTheme styleCellNameLabelWith:[NSString stringWithFormat:@"%@ %@", firstName, lastName]];
     
-    cell.teammatePositionLabel.text = self.theTeam[indexPath.row][@"title"];
-    
+    cell.teammatePositionLabel.attributedText = [CMBTheme styleCellPositionLabelWith:self.theTeam[indexPath.row][@"title"]];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"showDetail" sender:self];
+    [self performSegueWithIdentifier:@"showProfile" sender:self];
 }
 
 @end

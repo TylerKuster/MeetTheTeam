@@ -12,7 +12,7 @@
 		469AE8671EA05C9B00E4B35F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE8661EA05C9B00E4B35F /* main.m */; };
 		469AE86A1EA05C9B00E4B35F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE8691EA05C9B00E4B35F /* AppDelegate.m */; };
 		469AE86D1EA05C9B00E4B35F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE86C1EA05C9B00E4B35F /* MasterViewController.m */; };
-		469AE8701EA05C9B00E4B35F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE86F1EA05C9B00E4B35F /* DetailViewController.m */; };
+		469AE8701EA05C9B00E4B35F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE86F1EA05C9B00E4B35F /* ProfileViewController.m */; };
 		469AE8731EA05C9B00E4B35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469AE8711EA05C9B00E4B35F /* Main.storyboard */; };
 		469AE8781EA05C9B00E4B35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469AE8761EA05C9B00E4B35F /* LaunchScreen.storyboard */; };
 		469AE8831EA05C9B00E4B35F /* MeetTheTeamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE8821EA05C9B00E4B35F /* MeetTheTeamTests.m */; };
@@ -57,8 +57,8 @@
 		469AE8691EA05C9B00E4B35F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		469AE86B1EA05C9B00E4B35F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		469AE86C1EA05C9B00E4B35F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		469AE86E1EA05C9B00E4B35F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		469AE86F1EA05C9B00E4B35F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		469AE86E1EA05C9B00E4B35F /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		469AE86F1EA05C9B00E4B35F /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		469AE8721EA05C9B00E4B35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		469AE8771EA05C9B00E4B35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		469AE8791EA05C9B00E4B35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 				79E06BEF1EA12CDB002AA47D /* TeammateProfileView.h */,
 				79E06BF01EA12CDB002AA47D /* TeammateProfileView.m */,
 				469AE8A91EA08A5E00E4B35F /* TableViewCell */,
-				469AE86E1EA05C9B00E4B35F /* DetailViewController.h */,
-				469AE86F1EA05C9B00E4B35F /* DetailViewController.m */,
+				469AE86E1EA05C9B00E4B35F /* ProfileViewController.h */,
+				469AE86F1EA05C9B00E4B35F /* ProfileViewController.m */,
 				79E06BEC1EA12376002AA47D /* TeammateScrollView.h */,
 				79E06BED1EA12376002AA47D /* TeammateScrollView.m */,
 				469AE8711EA05C9B00E4B35F /* Main.storyboard */,
@@ -523,7 +523,7 @@
 				469AE86D1EA05C9B00E4B35F /* MasterViewController.m in Sources */,
 				469AE8671EA05C9B00E4B35F /* main.m in Sources */,
 				79E06BEE1EA12376002AA47D /* TeammateScrollView.m in Sources */,
-				469AE8701EA05C9B00E4B35F /* DetailViewController.m in Sources */,
+				469AE8701EA05C9B00E4B35F /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

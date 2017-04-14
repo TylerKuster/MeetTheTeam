@@ -6,19 +6,20 @@
 //  Copyright © 2017 TylerKuster. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "ProfileViewController.h"
 #import "UIImageView+AFNetworking.h"
 #import "TeammateProfileView.h"
+#import "CMBTheme.h"
 
 
-@interface DetailViewController ()
+@interface ProfileViewController ()
 
 @property (nonatomic, retain) IBOutlet UIImageView* teammateImageView;
 @property (nonatomic, retain) IBOutlet TeammateProfileView* profileView;
 
 @end
 
-@implementation DetailViewController
+@implementation ProfileViewController
 
 - (void)configureView
 {
@@ -30,11 +31,12 @@
         NSString* lastName = self.teammate[@"lastName"];
         
         [self.teammateImageView setImageWithURL:[NSURL URLWithString:self.teammate[@"avatar"]]];
-        self.profileView.nameLabel.text = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
         
-        self.profileView.positionLabel.text = self.teammate[@"title"];
+        self.profileView.nameLabel.attributedText = [CMBTheme styleProfileNameLabelWith:[NSString stringWithFormat:@"%@ %@", firstName, lastName]];
         
-        self.profileView.bioTextView.text = self.teammate[@"bio"];
+        self.profileView.positionLabel.attributedText = [CMBTheme styleProfilePositionLabelWith:self.teammate[@"title"]];
+        
+        self.profileView.bioTextView.attributedText = [CMBTheme styleProfileBioTextViewWith:self.teammate[@"bio"]];
     }
 }
 
@@ -44,19 +46,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [self configureView];
-}
-
-#pragma mark - Managing the detail item
-
-- (void)setTeammate:(NSDictionary *)newTeammate
-{
-    if (_teammate != newTeammate)
-    {
-        _teammate = newTeammate;
-        
-        // Update the view.
-        [self configureView];
-    }
 }
 
 @end

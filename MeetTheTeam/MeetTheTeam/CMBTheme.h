@@ -11,7 +11,14 @@
 @interface CMBTheme : NSObject
 
 + (UIColor*)cmbBlue;
++ (UIColor*)cmbGrey;
 
-+ (UILabel*)styleTeammateCellNameLabelWith:(UILabel*)label;
++ (NSMutableAttributedString*)styleCellNameLabelWith:(NSString*)text;
++ (NSMutableAttributedString*)styleCellPositionLabelWith:(NSString*)text;
+
++ (NSMutableAttributedString*)styleProfileNameLabelWith:(NSString*)text;
++ (NSMutableAttributedString*)styleProfilePositionLabelWith:(NSString*)text;
+
++ (NSMutableAttributedString*)styleProfileBioTextViewWith:(NSString*)text;
 
 @end

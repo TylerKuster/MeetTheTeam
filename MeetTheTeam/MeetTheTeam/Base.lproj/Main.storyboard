@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,8 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
         </array>
     </customFonts>
     <scenes>
@@ -36,55 +42,54 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--Detail-->
+        <!--Profile-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Profile" extendedLayoutIncludesOpaqueBars="YES" id="JEX-9P-axG" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
-                                <rect key="frame" x="20" y="301.5" width="335" height="0.0"/>
+                                <rect key="frame" x="20" y="333.5" width="335" height="0.0"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZzA-pR-oxl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="33" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZzA-pR-oxl" secondAttribute="height" multiplier="1:1" id="BVA-ti-67C"/>
                                     <constraint firstAttribute="width" constant="375" id="I9D-xZ-27M"/>
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-c3-dFt" customClass="TeammateScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmJ-I8-ABL" customClass="TeammateProfileView">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="393"/>
+                                        <rect key="frame" x="0.0" y="234" width="375" height="305"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbw-vw-bsa">
-                                                <rect key="frame" x="38" y="43" width="42" height="21"/>
+                                                <rect key="frame" x="20" y="79" width="335" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="27"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utf-Zn-e1L">
-                                                <rect key="frame" x="38" y="72" width="42" height="21"/>
+                                                <rect key="frame" x="20" y="112" width="335" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HXr-v0-eeR">
-                                                <rect key="frame" x="38" y="121" width="314" height="272"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HXr-v0-eeR">
+                                                <rect key="frame" x="16" y="153" width="343" height="200"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -93,7 +98,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="393" id="y8V-ep-71z"/>
+                                            <constraint firstItem="HXr-v0-eeR" firstAttribute="top" secondItem="QmJ-I8-ABL" secondAttribute="top" constant="153" id="NUe-Oo-FrE"/>
+                                            <constraint firstAttribute="trailing" secondItem="HXr-v0-eeR" secondAttribute="trailing" constant="16" id="hjK-xz-FAo"/>
+                                            <constraint firstItem="HXr-v0-eeR" firstAttribute="leading" secondItem="QmJ-I8-ABL" secondAttribute="leading" constant="16" id="m6c-Jj-sSF"/>
+                                            <constraint firstAttribute="height" constant="305" id="y8V-ep-71z"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="bioTextView" destination="HXr-v0-eeR" id="tz9-eo-eb9"/>
@@ -105,7 +113,7 @@
                                 <constraints>
                                     <constraint firstItem="QmJ-I8-ABL" firstAttribute="centerX" secondItem="9kz-c3-dFt" secondAttribute="centerX" id="EGF-Eb-yLG"/>
                                     <constraint firstAttribute="trailing" secondItem="QmJ-I8-ABL" secondAttribute="trailing" id="bv6-Xh-YTH"/>
-                                    <constraint firstItem="QmJ-I8-ABL" firstAttribute="top" secondItem="9kz-c3-dFt" secondAttribute="top" constant="210" id="qoB-PO-QhR"/>
+                                    <constraint firstItem="QmJ-I8-ABL" firstAttribute="top" secondItem="9kz-c3-dFt" secondAttribute="top" constant="234" id="qoB-PO-QhR"/>
                                     <constraint firstAttribute="bottom" secondItem="QmJ-I8-ABL" secondAttribute="bottom" id="rf6-1g-oR0"/>
                                     <constraint firstItem="QmJ-I8-ABL" firstAttribute="leading" secondItem="9kz-c3-dFt" secondAttribute="leading" id="zjI-aM-2jn"/>
                                 </constraints>
@@ -114,7 +122,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="9kz-c3-dFt" secondAttribute="bottom" id="8LT-Hg-nzu"/>
-                            <constraint firstItem="ZzA-pR-oxl" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="SAr-C9-yzk"/>
+                            <constraint firstItem="ZzA-pR-oxl" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="-31" id="SAr-C9-yzk"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="20" symbolic="YES" id="Tsc-yG-G1q"/>
                             <constraint firstItem="9kz-c3-dFt" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="Uq9-KA-kMH"/>
                             <constraint firstItem="9kz-c3-dFt" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="XFt-Eb-lO3"/>
@@ -129,10 +137,10 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="Teammate" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
                         <outlet property="profileView" destination="QmJ-I8-ABL" id="2tD-Kf-lHG"/>
                         <outlet property="teammateImageView" destination="ZzA-pR-oxl" id="gDD-nQ-KgX"/>
                     </connections>
@@ -202,7 +210,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
-                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
+                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showProfile" id="6S0-TO-JiA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

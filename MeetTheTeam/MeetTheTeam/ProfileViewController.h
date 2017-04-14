@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface ProfileViewController : UIViewController
 
 @property (strong, nonatomic) NSDictionary *teammate;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end
 
