@@ -18,7 +18,7 @@
     self.teammateImageView.layer.cornerRadius = self.teammateImageView.bounds.size.width / 2.0f;
     
     self.teammateImageView.layer.borderWidth = 3.0f;
-    self.teammateImageView.layer.borderColor = [CMBTheme cmbBlue].CGColor;
+    self.teammateImageView.layer.borderColor = [CMBTheme ttRed].CGColor;
 }
 
 @end

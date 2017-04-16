@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.058823529409999999" green="0.48627450979999998" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.89803921568627454" green="0.3529411764705882" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -209,7 +209,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.058823529411764705" green="0.48627450980392156" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.8980392157" green="0.35294117650000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>

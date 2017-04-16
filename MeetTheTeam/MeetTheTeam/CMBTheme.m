@@ -19,6 +19,15 @@
     return [UIColor colorWithRed:rValue green:gValue blue:bValue alpha:1.0f];
 }
 
++ (UIColor*)ttRed
+{
+    CGFloat rValue = 229.0f / 255.0f;
+    CGFloat gValue = 90.0f / 255.0f;
+    CGFloat bValue = 80.0f / 255.0f;
+    
+    return [UIColor colorWithRed:rValue green:gValue blue:bValue alpha:1.0f];
+}
+
 + (UIColor*)cmbGrey
 {
     CGFloat rValue = 100.0f / 255.0f;

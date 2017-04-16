@@ -53,7 +53,7 @@
     [blueLine addLineToPoint:CGPointMake(self.bounds.size.width, 94.0f)];
     [blueLine addLineToPoint:CGPointMake(0.0f, 6.0f)];
     
-    [[CMBTheme cmbBlue] set];
+    [[CMBTheme ttRed] set];
     
     [blueLine fill];
 }

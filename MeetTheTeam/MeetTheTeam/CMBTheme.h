@@ -11,6 +11,7 @@
 @interface CMBTheme : NSObject
 
 + (UIColor*)cmbBlue;
++ (UIColor*)ttRed;
 + (UIColor*)cmbGrey;
 
 + (NSMutableAttributedString*)styleCellNameLabelWith:(NSString*)text;
