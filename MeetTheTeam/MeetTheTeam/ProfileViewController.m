@@ -8,13 +8,14 @@
 
 #import "ProfileViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import "UIImageViewAligned.h"
 #import "TeammateProfileView.h"
 #import "CMBTheme.h"
 
 
 @interface ProfileViewController ()
 
-@property (nonatomic, retain) IBOutlet UIImageView* teammateImageView;
+@property (nonatomic, retain) IBOutlet UIImageViewAligned* teammateImageView;
 @property (nonatomic, retain) IBOutlet UIScrollView* scrollView;
 
 @property (nonatomic, retain) IBOutlet TeammateProfileView* profileView;

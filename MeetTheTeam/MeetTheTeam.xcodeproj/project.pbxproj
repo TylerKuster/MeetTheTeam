@@ -10,6 +10,7 @@
 		34AB8F7733E65ECE9FA6A3FC /* libPods-MeetTheTeam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA271B388529069B8AA35F4 /* libPods-MeetTheTeam.a */; };
 		3A64376040C5314400DF60C4 /* libPods-MeetTheTeamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC9F9B7D6FE4C58B434591A /* libPods-MeetTheTeamUITests.a */; };
 		4630D3C51EA2D91C008B6793 /* catTeam.json in Resources */ = {isa = PBXBuildFile; fileRef = 4630D3C41EA2D91C008B6793 /* catTeam.json */; };
+		4630D3C91EA3E454008B6793 /* UIImageViewAligned.m in Sources */ = {isa = PBXBuildFile; fileRef = 4630D3C81EA3E454008B6793 /* UIImageViewAligned.m */; };
 		469AE8671EA05C9B00E4B35F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE8661EA05C9B00E4B35F /* main.m */; };
 		469AE86A1EA05C9B00E4B35F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE8691EA05C9B00E4B35F /* AppDelegate.m */; };
 		469AE86D1EA05C9B00E4B35F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469AE86C1EA05C9B00E4B35F /* MasterViewController.m */; };
@@ -51,6 +52,8 @@
 		28F9AD8774E7AD6046868015 /* Pods-MeetTheTeamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetTheTeamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetTheTeamUITests/Pods-MeetTheTeamUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3AB9EC15B40C188993C13403 /* Pods-MeetTheTeamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetTheTeamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetTheTeamTests/Pods-MeetTheTeamTests.release.xcconfig"; sourceTree = "<group>"; };
 		4630D3C41EA2D91C008B6793 /* catTeam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catTeam.json; sourceTree = "<group>"; };
+		4630D3C71EA3E454008B6793 /* UIImageViewAligned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewAligned.h; sourceTree = "<group>"; };
+		4630D3C81EA3E454008B6793 /* UIImageViewAligned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewAligned.m; sourceTree = "<group>"; };
 		469AE8621EA05C9B00E4B35F /* MeetTheTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetTheTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469AE8661EA05C9B00E4B35F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		469AE8681EA05C9B00E4B35F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4630D3C61EA3E454008B6793 /* UIImageViewAligned */ = {
+			isa = PBXGroup;
+			children = (
+				4630D3C71EA3E454008B6793 /* UIImageViewAligned.h */,
+				4630D3C81EA3E454008B6793 /* UIImageViewAligned.m */,
+			);
+			path = UIImageViewAligned;
+			sourceTree = "<group>";
+		};
 		469AE8591EA05C9B00E4B35F = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 				469AE86F1EA05C9B00E4B35F /* ProfileViewController.m */,
 				79E06BEF1EA12CDB002AA47D /* TeammateProfileView.h */,
 				79E06BF01EA12CDB002AA47D /* TeammateProfileView.m */,
+				4630D3C61EA3E454008B6793 /* UIImageViewAligned */,
 				469AE8711EA05C9B00E4B35F /* Main.storyboard */,
 				469AE8761EA05C9B00E4B35F /* LaunchScreen.storyboard */,
 				79E06BE81EA10D93002AA47D /* Assets.xcassets */,
@@ -518,6 +531,7 @@
 				469AE86D1EA05C9B00E4B35F /* MasterViewController.m in Sources */,
 				469AE8671EA05C9B00E4B35F /* main.m in Sources */,
 				469AE8701EA05C9B00E4B35F /* ProfileViewController.m in Sources */,
+				4630D3C91EA3E454008B6793 /* UIImageViewAligned.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
