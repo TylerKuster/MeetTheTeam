@@ -31,7 +31,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"TeammateTableViewCell" bundle:nil]
          forCellReuseIdentifier:@"Cell"];
     
-    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"team" ofType:@"json"];
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"catTeam" ofType:@"json"];
     NSData* data = [NSData dataWithContentsOfFile:filePath];
     self.theTeam = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
