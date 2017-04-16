@@ -5,7 +5,7 @@ Meet the Team
 The instructions were simply to recreate the “Meet the Team” iOS application based on the (slightly modified) screenshots below. The app should allow the user to browse and learn about the team by scrolling through a list, and tapping anyone to learn more.
 
 #### Screenshots
-![alt text](screenShot0.png “Team table view”) ![alt text](screenShot1.png “Teammate profile”) ![alt text](screenShot2.png “Teammate profile scrolled up”)
+![alt tag](http://68.media.tumblr.com/b79aaa4f5b39015bf672510622884c4b/tumblr_ooiz7lKrgz1qbkxdyo1_500.png “Team table view”) ![alt tag](http://68.media.tumblr.com/77d6fff7a4a248e44c582f2d94c4d16a/tumblr_ooiz7lKrgz1qbkxdyo2_500.png “Teammate profile”) ![alt tag](http://68.media.tumblr.com/f8f9bcedc54a129a14273988565c6b7f/tumblr_ooiz7lKrgz1qbkxdyo3_500.png “Teammate profile scrolled up”)
 
 ## Custom Elements
 #### Team View
