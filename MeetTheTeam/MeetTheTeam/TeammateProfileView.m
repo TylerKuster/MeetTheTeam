@@ -39,9 +39,9 @@
 {
     UIBezierPath* whiteShape = [UIBezierPath bezierPath];
     [whiteShape moveToPoint:CGPointMake(0.0f, 0.5f)];
-    [whiteShape addLineToPoint:CGPointMake(self.bounds.size.width, 88.5f)];
-    [whiteShape addLineToPoint:CGPointMake(self.bounds.size.width, self.bounds.size.height)];
-    [whiteShape addLineToPoint:CGPointMake(0.0f, self.bounds.size.height)];
+    [whiteShape addLineToPoint:CGPointMake(rect.size.width, 88.5f)];
+    [whiteShape addLineToPoint:CGPointMake(rect.size.width, rect.size.height)];
+    [whiteShape addLineToPoint:CGPointMake(0.0f, rect.size.height)];
     
     [[UIColor whiteColor] set];
     
@@ -49,8 +49,8 @@
     
     UIBezierPath* blueLine = [UIBezierPath bezierPath];
     [blueLine moveToPoint:CGPointMake(0.0f, 0.0f)];
-    [blueLine addLineToPoint:CGPointMake(self.bounds.size.width, 88.0f)];
-    [blueLine addLineToPoint:CGPointMake(self.bounds.size.width, 94.0f)];
+    [blueLine addLineToPoint:CGPointMake(rect.size.width, 88.0f)];
+    [blueLine addLineToPoint:CGPointMake(rect.size.width, 94.0f)];
     [blueLine addLineToPoint:CGPointMake(0.0f, 6.0f)];
     
     [[CMBTheme ttRed] set];
