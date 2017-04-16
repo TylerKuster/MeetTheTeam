@@ -53,7 +53,7 @@
     NSString* firstName = self.theTeam[indexPath.row][@"firstName"];
     NSString* lastName = self.theTeam[indexPath.row][@"lastName"];
     
-    [cell.teammateImageView setImageWithURL:avatarURL placeholderImage:nil];
+    [cell.teammateImageView setImageWithURL:avatarURL];
 
     cell.teammateNameLabel.attributedText = [CMBTheme styleCellNameLabelWith:[NSString stringWithFormat:@"%@ %@", firstName, lastName]];
     
@@ -80,10 +80,7 @@
         
         controller.teammate = selectedTeammate;
         
-        controller.navigationItem.title = self.theTeam[indexPath.row][@"firstName"];
-        
-        // Either I'm insane or there is a very subtle gradient on the Navigation bar... Add this if there is time
-        
+        controller.navigationItem.title = self.theTeam[indexPath.row][@"firstName"];       
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }

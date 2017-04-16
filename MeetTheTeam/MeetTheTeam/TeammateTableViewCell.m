@@ -19,11 +19,6 @@
     
     self.teammateImageView.layer.borderWidth = 3.0f;
     self.teammateImageView.layer.borderColor = [CMBTheme cmbBlue].CGColor;
-    
-    
-    UIImageView* chevronRight = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chevronRight"]];
-    
-    self.accessoryView = chevronRight;
 }
 
 @end

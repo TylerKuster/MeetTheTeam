@@ -42,7 +42,23 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="z4r-OU-3aQ">
+                        <rect key="frame" x="339" y="36" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="N1K-7G-XcH"/>
+                            <constraint firstAttribute="height" constant="13" id="j30-az-Ya8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="32"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="z4r-OU-3aQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="HQ6-QY-wsd"/>
+                    <constraint firstAttribute="trailing" secondItem="z4r-OU-3aQ" secondAttribute="trailing" constant="28" id="Ys5-tI-0Zy"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="teammateImageView" destination="q6N-dI-kLB" id="BBL-CH-Kby"/>
@@ -52,4 +68,7 @@
             <point key="canvasLocation" x="61.5" y="76"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="chevronRight" width="8" height="13"/>
+    </resources>
 </document>

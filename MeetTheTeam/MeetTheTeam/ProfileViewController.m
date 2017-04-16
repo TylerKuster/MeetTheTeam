@@ -40,6 +40,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, self.profileView.bioTextView.frame.size.height + 402.0f);
+
         });
     }
 }
